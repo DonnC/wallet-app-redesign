@@ -5,7 +5,7 @@ class LowerAccountDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
-        top: MediaQuery.of(context).size.height * 0.45,
+        top: MediaQuery.of(context).size.height * 0.50,
       ),
       child: Container(
         width: MediaQuery.of(context).size.width,
@@ -14,7 +14,7 @@ class LowerAccountDetails extends StatelessWidget {
             topLeft: Radius.circular(35.0),
             topRight: Radius.circular(35.0),
           ),
-          color: Colors.white,
+          color: Colors.white.withOpacity(0.95),
         ),
         child: Padding(
           padding: EdgeInsets.all(20.0),
@@ -39,7 +39,7 @@ class LowerAccountDetails extends StatelessWidget {
                       'Pay vendors',
                       style: TextStyle(
                         color: Colors.black87,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.bold,
                         fontSize: 20.0,
                       ),
                     ),
@@ -79,7 +79,7 @@ class LowerAccountDetails extends StatelessWidget {
                       height: 15.0,
                     ),
                     GestureDetector(
-                      onTap: () => print('view numbers pressed'),
+                      onTap: () {},
                       child: Text(
                         'Click to view numbers',
                         style: TextStyle(
@@ -132,11 +132,11 @@ class LowerAccountDetails extends StatelessWidget {
                           'Credit card',
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 15.0,
+                            fontSize: 17.0,
                           ),
                         ),
                         GestureDetector(
-                          onTap: () => print('credit card pressed'),
+                          onTap: () {},
                           child: Icon(
                             Icons.keyboard_arrow_right,
                             color: Colors.black,

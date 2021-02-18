@@ -5,7 +5,7 @@ class AccountDetailsAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
-        top: 20.0,
+        top: 8,
         right: 10.0,
         left: 10.0,
       ),
@@ -23,7 +23,7 @@ class AccountDetailsAppbar extends StatelessWidget {
               IconButton(
                 color: Colors.white,
                 icon: Icon(Icons.search),
-                onPressed: () => print("search pressed"),
+                onPressed: () {},
               ),
             ],
           ),

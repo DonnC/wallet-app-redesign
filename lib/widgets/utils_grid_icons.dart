@@ -6,9 +6,13 @@ class UtilsGridIcons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 150.0,
-      width: 300.0,
+      width: double.infinity,
       child: Padding(
-        padding: EdgeInsets.all(10.0),
+        padding: EdgeInsets.only(
+          left: 30,
+          right: 30,
+          bottom: 5,
+        ),
         child: Align(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -77,15 +81,16 @@ class UtilsGridIcons extends StatelessWidget {
   }
 }
 
-Widget optionsIcons(IconData optIcon, String optText, Color backColor, Function onTap) {
+Widget optionsIcons(
+    IconData optIcon, String optText, Color backColor, Function onTap) {
   return GestureDetector(
     onTap: onTap,
-      child: Row(
+    child: Row(
       children: <Widget>[
         CircleAvatar(
           backgroundColor: backColor,
-          radius: 15.0,
-          child: Align(
+          radius: 17.0,
+          child: Center(
             child: Icon(
               optIcon,
               color: Colors.white,
@@ -98,7 +103,7 @@ Widget optionsIcons(IconData optIcon, String optText, Color backColor, Function 
           optText,
           style: TextStyle(
             fontSize: 15.0,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.w600,
           ),
         ),
       ],

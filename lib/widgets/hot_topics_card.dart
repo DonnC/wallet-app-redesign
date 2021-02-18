@@ -3,28 +3,19 @@ import 'package:flutter/material.dart';
 class HotTopicsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Padding(
-        padding: EdgeInsets.only(
-          left: 20.0,
-          right: 20.0,
-          bottom: 10.0,
-        ),
-        child: GestureDetector(
-          onTap: () => print('hot topic pressed'),
-          child: Stack(
-            children: <Widget>[
-              Container(
-                height: MediaQuery.of(context).size.height - 100,
-                width: 40,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-              ),
-              Container(
-                height: 250,
-                width: 400,
+    return Container(
+      height: 160,
+      width: double.infinity,
+      color: Colors.white,
+      child: GestureDetector(
+        onTap: () {},
+        child: Stack(
+          children: <Widget>[
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Container(
+                height: 140,
+                width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(10.0),
@@ -41,7 +32,7 @@ class HotTopicsCard extends StatelessWidget {
                         'Tell you',
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 20.0,
+                            fontSize: 35,
                             color: Colors.white),
                       ),
                       Text(
@@ -49,27 +40,27 @@ class HotTopicsCard extends StatelessWidget {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 20.0,
+                          fontSize: 35,
                         ),
                       ),
                     ],
                   ),
                 ),
               ),
-              Positioned(
-                top: -20.0,
-                right: 5.0,
-                child: Container(
-                  height: 150.0,
-                  width: 150.0,
-                  decoration: BoxDecoration(
-                    color: Colors.transparent,
-                  ),
-                  child: Image.asset('assets/images/falling_coins_.png'),
+            ),
+            Positioned(
+              top: -20.0,
+              right: 5.0,
+              child: Container(
+                height: 130.0,
+                width: 130.0,
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
                 ),
+                child: Image.asset('assets/images/falling_coins_.png'),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
