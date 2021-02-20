@@ -12,9 +12,7 @@ A new Flutter project.
 - Original dribbble design image
 ![original dribbble design](assets/screenshots/screen.png)
 
-#### my redesigns
-- My first flutter ui redisgn
-- `still working on the bottomNavigationBar` 😜
+#### my redesign
 - the redesigned home page
 ![images](assets/screenshots/home_page.png)
 - the redesigned account details page
